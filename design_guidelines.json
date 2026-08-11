@@ -1,0 +1,127 @@
+{
+  "project_name": "SHREE ENTERPRISE",
+  "brand_positioning": "SHREE ENTERPRISE — BUILDING WITH TRUST — Since 2010",
+  "theme": "dark",
+  "archetype": "Swiss & High-Contrast (Industrial Luxury variant)",
+  "color_palette": {
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#171717",
+    "background_light_section": "#E5E5E5",
+    "accent_primary": "#FF4A1C",
+    "text_primary_dark_theme": "#F5F5F5",
+    "text_secondary_dark_theme": "#A3A3A3",
+    "text_primary_light_theme": "#121212",
+    "text_secondary_light_theme": "#525252",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_light_theme": "rgba(0, 0, 0, 0.1)"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk, sans-serif",
+    "body_font": "Manrope, sans-serif",
+    "h1": "text-5xl md:text-6xl+ tracking-tighter uppercase font-black",
+    "h2": "text-4xl md:text-5xl tracking-tight uppercase font-bold",
+    "h3": "text-2xl md:text-3xl tracking-tight font-semibold",
+    "h4": "text-lg md:text-xl font-medium",
+    "body": "text-base leading-relaxed",
+    "overline": "text-xs md:text-sm tracking-[0.2em] uppercase font-bold text-[#FF4A1C]",
+    "rules": [
+      "No Inter, Roboto, or standard sans-serifs for headings.",
+      "Headlines MUST be tightly tracked (tracking-tighter).",
+      "Overlines/Labels MUST be Uppercase, tiny, and widely spaced.",
+      "Use typography to create structural boundaries—treat text as building blocks."
+    ],
+    "installation": "Import Cabinet Grotesk from fontshare or standard CSS imports, and Manrope from Google Fonts."
+  },
+  "layouts": {
+    "spacing_scale": "Generous. Use py-24, py-32 for section padding. gap-8 to gap-16 for grids.",
+    "grid_strategy": "MODE A: THE TETRIS GRID (Asymmetrical, high visual tension). Never fill 100% of the grid perfectly. Leave breathing room.",
+    "container_alignment": "Optically aligned. Center alignment ONLY for specific dramatic editorial moments. Default to strong left-alignment to reflect architectural blueprints.",
+    "borders": "Expose the skeleton. Use 1px solid borders (border-white/10) to create architectural grid structures across the page."
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp corners (rounded-none or max rounded-sm), high contrast. Primary: bg-[#FF4A1C] text-white hover:bg-[#E03A10] transition-colors. Secondary: bg-transparent border border-white/20 text-white hover:bg-white/10.",
+      "animation": "Include a subtle group-hover arrow translation."
+    },
+    "cards": {
+      "style": "Cardless or flat solid surface (bg-[#171717]). NO soft shadows. 1px solid border. Inner padding p-8 or p-12.",
+      "images": "Spotlighted or clipped frames. Never generic rounded rects. Use aspect ratios like 3:4 or 16:9 deliberately."
+    },
+    "navigation": {
+      "style": "Glassmorphism: backdrop-blur-xl bg-black/60 with a 1px solid bottom border (border-white/10). Sticky top.",
+      "links": "Hover state must be explicitly styled (e.g., text-[#FF4A1C])."
+    },
+    "footer": {
+      "style": "Massive structural layout. Deep dark (or stark light contrast). py-32. Huge typographic logo at the bottom (text-[10vw])."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle concrete/paper noise overlay on the entire site to remove digital flatness (pointer-events-none, fixed, opacity-20).",
+    "lines": "Architectural grid lines dividing sections horizontally and vertically.",
+    "numbers": "Large, outline, architectural numbers (e.g., text-8xl text-transparent stroke-white) for numbered manifesto chapters.",
+    "marquee": "Slow editorial drift. Font: Cabinet Grotesk, uppercase, outlined text, tracking-widest."
+  },
+  "motion": {
+    "libraries": [
+      "@studio-freight/react-lenis (for momentum scrolling)",
+      "framer-motion (for scroll reveals, kinetic typography)",
+      "lucide-react (for iconography)"
+    ],
+    "hero_animation": "Masked line-by-line reveal for 'BUILDING WITH TRUST'. Staggered entrance for hero elements.",
+    "scroll_reveals": "Fade up with slight y-axis translation (y: 40, opacity: 0 -> y: 0, opacity: 1).",
+    "parallax": "Subtle parallax on large signature project images using framer-motion useScroll."
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1644221150167-fb4fafa7f411?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzg2NDQ3ODE2fDA&ixlib=rb-4.1.0&q=85",
+      "description": "High contrast building under construction with a crane. Use with a bg-black/40 overlay.",
+      "category": "Hero Background"
+    },
+    "signature_projects": [
+      {
+        "url": "https://images.unsplash.com/photo-1527335988388-b40ee248d80c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjb25zdHJ1Y3Rpb24lMjBzaXRlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzg2NDQ3ODE2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Gray metal building frame near tower crane"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515674744565-0d7112cd179a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHw0fHxjaXZpbCUyMGVuZ2luZWVyaW5nJTIwaW5mcmFzdHJ1Y3R1cmUlMjBicmlkZ2V8ZW58MHx8fHwxNzg2NDQ3ODE2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Gray concrete bridge on body of water (Civil Infrastructure)"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1522775559573-2f76d540932b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxjaXZpbCUyMGVuZ2luZWVyaW5nJTIwaW5mcmFzdHJ1Y3R1cmUlMjBicmlkZ2V8ZW58MHx8fHwxNzg2NDQ3ODE2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Large concrete bridge landscape photography"
+      }
+    ],
+    "equipment_and_machinery": [
+      {
+        "url": "https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwxfHxoZWF2eSUyMGNvbnN0cnVjdGlvbiUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3ODY0NDc4MTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Yellow and black excavator on rocky ground"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1629807473015-41699c4471b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHw0fHxoZWF2eSUyMGNvbnN0cnVjdGlvbiUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3ODY0NDc4MTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Heavy loader equipment on brown field"
+      }
+    ]
+  },
+  "universal_guidelines": [
+    "NEVER center align the entire app container.",
+    "Do NOT use complete transparent backgrounds for headers/navbars; always use backdrop-blur + semi-transparent dark bg.",
+    "Avoid generic 'AI slop' aesthetics. Use stark contrasts, deliberate borders, and sharp UI elements.",
+    "Incorporate 2-3x more spacing than feels normal. Let the content breathe.",
+    "Every interactive element MUST have explicitly defined hover states. Text visibility MUST be guaranteed on hover.",
+    "Use data-testid on all interactive elements (buttons, inputs, links, tabs).",
+    "Replace standard rounded edges with sharp or near-sharp edges to match the 'construction/architectural' vibe.",
+    "DO NOT use generic gradients. Keep colors flat, dense, and purposeful. Add noise/textures instead of gloss.",
+    "Images should have purposeful aspect ratios (e.g., tall 3:4 for people, wide 16:9 for projects) and utilize object-cover.",
+    "If using a Map, style it dark to match the theme. No default bright Google Maps styling."
+  ],
+  "instructions_to_main_agent": [
+    "Install the required font: Cabinet Grotesk (from Fontshare or local assets) and configure it in tailwind.config.js.",
+    "Install framer-motion and @studio-freight/react-lenis for smooth scrolling and animations.",
+    "Build the hero section with a dark overlay (bg-black/50) over the background image, and implement a staggering line-by-line reveal for the headline 'BUILDING WITH TRUST'.",
+    "Create an 'Editorial Marquee' section using framer-motion to continuously scroll text slowly.",
+    "Use a CSS noise texture overlay globally on the App wrapper with pointer-events: none.",
+    "Ensure all data cards (equipment, projects, people) lack generic drop shadows. Rely on 1px borders (border-white/10) to define bounds.",
+    "Add 'data-testid' to all buttons, links, and forms. Example: data-testid='contact-submit-button'.",
+    "Make the website fully responsive, defaulting to single columns on mobile, scaling up to complex bento/asymmetrical grids on md/lg viewports."
+  ]
+}
